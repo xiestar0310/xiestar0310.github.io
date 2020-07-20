@@ -1,0 +1,107 @@
+<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+
+<svg viewBox="0 0 1600 400">
+
+  <!-- Symbol -->
+  <symbol id="s-text">
+    <text text-anchor="middle"
+            x="50%" y="50%" dy=".15em">
+      Email Sent!
+     </text>
+  </symbol>
+
+  <!-- Duplicate symbols -->
+  <use xlink:href="#s-text" class="text"
+            ></use>
+  <use xlink:href="#s-text" class="text"
+            ></use>
+  <use xlink:href="#s-text" class="text"
+            ></use>
+  <use xlink:href="#s-text" class="text"
+            ></use>
+  <use xlink:href="#s-text" class="text"
+            ></use>
+</svg>
+
+<!-- Refresh the animation every 10 seconds -->
+<meta http-equiv="refresh" content="10 url=index.html" />
+<br><br><br><br><br><br>
+
+<style type="text/css">
+  /* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: none;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-dasharray: 30 170;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+  font-size:200px;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #ea4848;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+.text:nth-child(5n + 2) {
+  stroke: #03a9f4;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #3fb8af;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: orange;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #7fff00;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+/* Other styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #111;
+  background-size: .2em 100%;
+  font: 14.5em/1;
+  font-family: 'Baloo Tamma', cursive;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+</style>
